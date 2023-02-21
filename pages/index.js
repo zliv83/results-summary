@@ -1,4 +1,6 @@
+/* eslint-disable import/extensions */
 import Head from 'next/head';
+import ResultsCard from '@/components/ResultsCard';
 
 import styles from './Home.module.scss';
 
@@ -8,6 +10,7 @@ export default function Home() {
       <Head>
         <title>Home Page</title>
       </Head>
+      <ResultsCard />
     </div>
   );
 }

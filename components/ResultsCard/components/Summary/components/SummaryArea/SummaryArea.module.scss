@@ -1,0 +1,41 @@
+@import '@/styles/__settings';
+
+.summaryArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: toRem(16) toRem(17);
+  border-radius: toRem(12);
+  font-size: toRem(16);
+  line-height: toRem(21);
+
+  @include desktop() {
+    font-size: toRem(18);
+    line-height: toRem(23);
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: toRem(12);
+
+    .title {
+      font-weight: 500;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: toRem(8);
+    font-weight: 700;
+    color: $navy;
+
+    .maxValue {
+      opacity: 0.5;
+    }
+  }
+}

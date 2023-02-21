@@ -1,0 +1,64 @@
+@import '@/styles/__settings';
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: toRem(24) toRem(30) toRem(30) toRem(30);
+  height: 100%;
+
+  @include desktop() {
+    width: calc(736px - 368px);
+    padding: toRem(38) toRem(40) toRem(46) toRem(40);
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: toRem(18);
+    line-height: toRem(23);
+    color: $navy;
+
+    @include desktop() {
+      font-size: toRem(24);
+      line-height: toRem(31);
+    }
+  }
+
+  .summaryAreaContainer {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(16);
+    margin-top: toRem(24);
+
+    .reaction {
+      background: $redWhite;
+      color: $red;
+    }
+
+    .memory {
+      background: $yellowWhite;
+      color: $yellow;
+    }
+
+    .verbal {
+      background: $greenWhite;
+      color: $green;
+    }
+
+    .visual {
+      background: $blueWhite;
+      color: $blue;
+    }
+
+    @include desktop() {
+      margin-top: toRem(28);
+    }
+  }
+
+  .button {
+    margin-top: toRem(24);
+
+    @include desktop() {
+      margin-top: toRem(41);
+    }
+  }
+}

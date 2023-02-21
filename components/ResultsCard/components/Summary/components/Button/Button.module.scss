@@ -1,0 +1,17 @@
+@import '@/styles/__settings';
+
+.button {
+  background: $navy;
+  border-radius: toRem(128);
+  color: $white;
+  border: none;
+  padding: toRem(17) 0 toRem(17) 0;
+  font-weight: 700;
+  font-size: toRem(18);
+  line-height: toRem(23);
+  cursor: pointer;
+
+  &:hover {
+    background: $gradient1;
+  }
+}

@@ -1,0 +1,59 @@
+@import '@/styles/__settings';
+
+.yourResult {
+  display: flex;
+  flex-direction: column;
+  padding: toRem(24) toRem(57) toRem(40) toRem(58);
+  background: $gradient1;
+  box-shadow: 0 toRem(30) toRem(60) rgba(61, 108, 236, 0.15);
+  border-radius: 0 0 $border-radius $border-radius;
+  @include center();
+
+  @include desktop() {
+    border-radius: $border-radius;
+    width: toRem(368);
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: toRem(18);
+    line-height: toRem(23);
+    color: $lightBlue;
+
+    @include desktop() {
+      font-size: toRem(24);
+      line-height: toRem(31);
+    }
+  }
+
+  .avatar {
+    margin-top: toRem(24);
+  }
+
+  .great {
+    margin-top: toRem(24);
+    font-weight: 700;
+    font-size: toRem(24);
+    line-height: toRem(31);
+    color: $white;
+
+    @include desktop() {
+      font-size: toRem(32);
+      line-height: toRem(42);
+    }
+  }
+
+  .description {
+    margin-top: toRem(8);
+    text-align: center;
+    font-weight: 500;
+    font-size: toRem(16);
+    line-height: toRem(21);
+    color: $lightBlue;
+
+    @include desktop() {
+      font-size: toRem(18);
+      line-height: toRem(23);
+    }
+  }
+}
